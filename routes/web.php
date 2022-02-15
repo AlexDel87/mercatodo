@@ -22,7 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('clientes','App\Http\Controllers\Clientecontroller');
+Route::resource('clientes','App\Http\Controllers\ClienteController');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -44,4 +44,3 @@ Route::post('/email/verification-notification', function (Request $request) {
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
-Route::resource( name: 'cliente', controller: Clientecontroller::class);

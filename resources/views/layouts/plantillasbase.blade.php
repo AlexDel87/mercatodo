@@ -11,7 +11,7 @@
     <title>CREAR, LEER, ACTUALIZAR Y ELIMINAR CLIENTES</title>
   </head>
   <body>
-    <h1 class="bg-primary text-white text-center">Actualizacion de base de datos</h1>
+    <h1 class="bg-primary text-white text-center">Clientes MERCATODO</h1>
 
     <div class="container">
         @yield('contenido')
